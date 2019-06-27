@@ -116,7 +116,7 @@ add_action(
 		require_once APP_APP_SETUP_DIR . 'sidebars.php';
 	}
 );
-include_once APP_THEME_DIR.'partials\navwalker.php';
+include_once APP_THEME_DIR.'partials/navwalker.php';
 add_image_size( "post_image", 2000, 400, ['center', 'center'] );
 add_image_size( "big_thumbnail", 200, 200, true);
 add_action( 'widgets_init', function(){

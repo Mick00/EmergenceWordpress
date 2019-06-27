@@ -8,7 +8,7 @@
 
 # Build modules
 /node_modules/
-
+yarn.lock
 # Composer packages
 /vendor/
 

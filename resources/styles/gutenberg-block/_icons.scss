@@ -1,0 +1,23 @@
+.icon-small {
+  font-size: map-get($font-size, 's')
+}
+
+.icon-normal{
+  font-size: map-get($font-size, 'm');
+}
+
+.icon-big {
+  font-size: map-get($font-size, 'l');
+}
+
+.icon-huge {
+  font-size: map-get($font-size, 'xl');
+}
+
+.icon-giant {
+  font-size: 60px;
+}
+
+.icon-giganormous {
+  font-size: 90px;
+}

@@ -14,3 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // phpcs:ignore
 // register_widget( MyWidgetClass::class );
+
+/**
+ * Rich Text widget
+ */
+register_widget( App\Widgets\Carbon_Rich_Text_Widget::class );

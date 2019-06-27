@@ -60,3 +60,10 @@ add_filter( 'login_headertext', 'app_filter_login_headertext' );
  * External Libraries and Plugins.
  * ------------------------------------------------------------------------
  */
+
+/**
+ * Carbon Fields
+ */
+add_action( 'after_setup_theme', 'app_bootstrap_carbon_fields', 100 );
+add_action( 'carbon_fields_register_fields', 'app_bootstrap_carbon_fields_register_fields' );
+add_filter( 'carbon_fields_map_field_api_key', 'app_filter_carbon_fields_google_maps_api_key' );
