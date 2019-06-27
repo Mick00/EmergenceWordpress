@@ -1,0 +1,17 @@
+div.wpcf7-response-output {
+  color: $light;
+  border-width: 0;
+  padding: 1em;
+}
+
+div.wpcf7-response-output.wpcf7-validation-errors{
+  @extend .bg-danger;
+}
+
+div.wpcf7-response-output.wpcf7-mail-sent-ok {
+  @extend .bg-success;
+}
+
+span.wpcf7-not-valid-tip {
+  color: $danger;
+}
