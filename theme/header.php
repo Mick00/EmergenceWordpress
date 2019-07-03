@@ -21,9 +21,12 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php app_shim_wp_body_open(); ?>
-		<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+		<nav id="nav" class="fixed-top navbar navbar-expand-md navbar-light transparent-nav<?=is_admin_bar_showing()?" admin-bar-showing":"" ?>" role="navigation">
 		  <div class="container">
-				<a class="navbar-brand" href="/"><?php bloginfo( 'name' ); ?></a>
+				<a class="navbar-brand" href="/">
+					<img src="<?=carbon_get_theme_option('dark_logo')?>" alt="Logo sombre <?=bloginfo('name')?>" class="logo logo-dark">
+					<img src="<?=carbon_get_theme_option('light_logo')?>" alt="Logo <?=bloginfo('name')?>" class="logo logo-light">
+				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-items-container" aria-controls="navbar-items-container" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>

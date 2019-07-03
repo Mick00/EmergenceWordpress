@@ -1,0 +1,40 @@
+nav {
+  transition: background-color 0.2s, color 0.2s;
+  div.navbar-collapse ul, div.navbar-toggler ul{
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+nav.admin-bar-showing {
+  margin-top: 32px;
+}
+
+#nav.transparent-nav {
+  .navbar-brand, .nav-item.active a {
+    color: $light !important;
+  }
+  .nav-item .nav-link{
+    color: rgba($light, 0.7) !important;
+  }
+
+  .navbar-brand {
+    .logo-light{
+      opacity: 0;
+    }
+    .logo-dark {
+      opacity: 1;
+    }
+  }
+
+}
+
+.navbar-brand {
+  .logo-light {
+    opacity: 1;
+  }
+  .logo-dark {
+    position: absolute;
+    opacity: 0;
+  }
+}

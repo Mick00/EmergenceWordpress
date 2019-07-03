@@ -1,5 +1,5 @@
 <?php
-$class = "article__head p-5";
+$class = "head-page article__head p-5";
 $style;
 global $post;
 if (has_post_thumbnail( $post->ID )) {

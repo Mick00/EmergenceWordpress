@@ -10,7 +10,7 @@
 WPEmerge\render( 'header' );
 
 ?>
-<div class="container">
+<div id="content-wrapper" class="container">
 	<div class="row">
 		<div class="col-sm-12 col-md-9">
 <?php WPEmerge\layout_content();?>
