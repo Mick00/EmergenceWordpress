@@ -3,6 +3,8 @@
 use Carbon_Fields\Block;
 use Carbon_Fields\Field\Field;
 
+
+
 Block::make(__('Icon'))
 ->add_fields([
   Field::make('text', 'classes',__('Classes')),
@@ -17,7 +19,7 @@ Block::make(__('Icon'))
   ]),
 ])
 ->set_description(__('Ajouter un icone'))
-->set_category('Propulsion')
+->set_category('Emergence')
 ->set_render_callback(function($fields){
     echo "<i class='".$fields['classes']." ".$fields['size']."'></i>";
 });

@@ -9,6 +9,7 @@
 # Build modules
 /node_modules/
 yarn.lock
+composer.lock
 # Composer packages
 /vendor/
 

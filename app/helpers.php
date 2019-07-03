@@ -12,13 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Load base helpers.
  */
-require_once APP_APP_HELPERS_DIR . 'shims.php';
-require_once APP_APP_HELPERS_DIR . 'admin.php';
-require_once APP_APP_HELPERS_DIR . 'assets.php';
-require_once APP_APP_HELPERS_DIR . 'content.php';
-require_once APP_APP_HELPERS_DIR . 'login.php';
-require_once APP_APP_HELPERS_DIR . 'shortcodes.php';
-require_once APP_APP_HELPERS_DIR . 'title.php';
+// require_once APP_APP_HELPERS_DIR . 'shims.php';
+// require_once APP_APP_HELPERS_DIR . 'admin.php';
+// require_once APP_APP_HELPERS_DIR . 'assets.php';
+// require_once APP_APP_HELPERS_DIR . 'content.php';
+// require_once APP_APP_HELPERS_DIR . 'login.php';
+// require_once APP_APP_HELPERS_DIR . 'shortcodes.php';
+// require_once APP_APP_HELPERS_DIR . 'title.php';
 
 /**
  * Require custom helper files here.
@@ -30,7 +30,7 @@ require_once APP_APP_HELPERS_DIR . 'title.php';
  *
  * Automatically require all helper files in the app/helpers directory (non-recursive).
  */
-/*
+
 $helpers = glob( APP_APP_HELPERS_DIR . '*.php' );
 foreach ( $helpers as $helper ) {
 	if ( ! is_file( $helper ) ) {
@@ -39,6 +39,6 @@ foreach ( $helpers as $helper ) {
 
 	require_once $helper;
 }
-*/
+
 // phpcs:enable
 require_once APP_APP_HELPERS_DIR . 'carbon-fields.php';
