@@ -15,7 +15,7 @@ if ( get_post_type() !== 'post' ) {
 ?>
 
 <div class="article__meta">
-	<p class="text-muted">
+	<p class="text-light">
 		<?php
 		the_time( 'j F Y ' );
 		/* translators: post author attribution */

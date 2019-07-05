@@ -1,5 +1,5 @@
 <?php
-$class = "head-page article__head p-5";
+$class = "head-page article__head";
 $style;
 global $post;
 if (has_post_thumbnail( $post->ID )) {
@@ -10,15 +10,16 @@ if (has_post_thumbnail( $post->ID )) {
 }
 if (is_singular()):?>
   <header class="<?=$class?>" <?=$style?>>
-    <div class="container">
-      <h2 class="article__title">
-        <?php the_title(); ?>
-      </h2>
-      <?php
-      $meta_render = apply_filters('emergence_render_post_meta', 'partials\post-meta', $post);
-      WPEmerge\render( $meta_render );
-      ?>
-
+    <div class="gradient-overlay has-bg alignfull d-flex align-items-center">
+      <div class="container">
+        <h2 class="article__title text-white">
+          <?php the_title(); ?>
+        </h2>
+        <?php
+        $meta_render = apply_filters('emergence_render_post_meta', 'partials\post-meta', $post);
+        WPEmerge\render( $meta_render );
+        ?>
+      </div>
     </div>
   </header>
 <?php endif;?>
