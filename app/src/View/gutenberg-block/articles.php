@@ -19,8 +19,12 @@ $post = $recent_posts[0];
           <span class="font-weight-bold d-block"><?=date_i18n('M',$date)?></span>
         </div>
         <div class="article-content">
-          <h3 class="text-light text-bold"><?=$post->post_title?></h3>
-          <p class="text-light text-bold"><?=$post->post_excerpt?></p>
+          <h3 class="text-light text-bold">
+            <a class="text-white text-bold" href="<?=get_permalink($post->ID)?>"><?=$post->post_title?></a>
+          </h3>
+          <a class="text-white text-bold" href="<?=get_permalink($post->ID)?>">
+            <p><?=$post->post_excerpt?></p>
+          </a>
         </div>
       </div>
     </div>
@@ -37,7 +41,9 @@ $post = $recent_posts[0];
             <span class="font-weight-bold d-block"><?=date_i18n('M',$date)?></span>
           </div>
           <div class="article-content">
-            <h4 class="text-light text-bold"><?=$post->post_title?></h3>
+            <h4 class="text-white text-bold">
+              <a class="text-white text-bold" href="<?=get_permalink($post->ID)?>"><?=$post->post_title?></a>
+            </h3>
           </div>
         </div>
       </div>

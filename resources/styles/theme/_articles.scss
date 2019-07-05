@@ -8,6 +8,13 @@
 
 .emergence-articles {
   min-height: 400px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $light;
+    }
+  }
   .overlay {
     align-items: flex-end;
     width: 100%;
