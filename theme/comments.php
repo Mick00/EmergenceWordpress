@@ -42,9 +42,9 @@ if ( post_password_required() ) {
 			'comments',
 			[
 				'enable_numbers' => true,
-				'prev_html'      => '<a href="{URL}" class="paging__prev">' . esc_html__( '« Previous Comments', 'app' ) . '</a>',
-				'next_html'      => '<a href="{URL}" class="paging__next">' . esc_html__( 'Next Comments »', 'app' ) . '</a>',
-			]
+				'prev_html' => '<a href="{URL}" class="btn btn-primary"><i class="fas fa-arrow-left"></i> ' . esc_html__( 'Previous Comment', 'app' ) . '</a>',
+				'next_html' => '<a href="{URL}" class="btn btn-primary">' . esc_html__( 'Next Comment', 'app' ) . ' <i class="fas fa-arrow-right"></i></a>',
+				]
 		);
 		?>
 	<?php endif; ?>

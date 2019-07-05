@@ -308,7 +308,6 @@
 .comment-respond {
   width: 100%;
   padding-top: 30px;
-  border-top: 1px solid #363636;
 
   h3 {
     position: relative;
@@ -320,37 +319,14 @@
     right: 0;
   }
 
-  label {
-    display: block;
-    padding-bottom: 4px;
-  }
-
   input[type="text"],
   input[type="email"],
   input[type="url"],
   textarea {
-    display: block;
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #f7f7f7;
+    @extend .form-control;
   }
-
-  textarea {
-    width: 100%;
-    height: 100px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="url"] {
-    &:focus {
-      background-color: #fff;
-    }
-
-    &::placeholder {
-      color: #777;
-    }
+  input[type="checkbox"]{
+    @extend .form-check-input;
   }
 
   .required {
@@ -362,14 +338,8 @@
   }
 
   .form-submit input {
-    display: block;
-    width: 160px;
-    height: 40px;
-    border: 0;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    background: #363636;
+    @extend .btn;
+    @extend .btn-secondary;
     cursor: pointer;
   }
 }
