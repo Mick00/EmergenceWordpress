@@ -5,11 +5,12 @@ let nav;
 window.addEventListener('load', event => {
   head = document.getElementsByClassName('head-page');
   nav = $('#nav');
-  if (head.length > 0) {
+  if (head.length > 0 && $(document).height() > $(window).height()) {
     console.log('creating observer');
     createObserver();
   } else {
-
+    nav.removeClass('transparent-nav fixed-top');
+    nav.addClass('bg-light');
   }
 }, false);
 
