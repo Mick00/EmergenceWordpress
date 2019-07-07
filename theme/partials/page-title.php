@@ -1,6 +1,6 @@
 <?php
 $class = "head-page article__head";
-$style;
+$style = "style=\"\"";
 global $post;
 if (has_post_thumbnail( $post->ID )) {
   $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post_image')[0];

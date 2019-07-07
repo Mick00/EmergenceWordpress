@@ -19,8 +19,11 @@ Block::make(__('Flex row'))
 ->set_description(__('Ajouter une section contenant des fonctionnalités en vedette'))
 ->set_category('Emergence')
 ->set_render_callback(function($fields, $attributes = [], $innerblocs = ""){
-  $class = $attributes['className'] . ($fields['wrap'] ? " flex-wrap":"");
-  $class .= $fields['gutter'] ? " ".$fields['gutter']:"";
+  $class = ($fields['wrap'] ? " flex-wrap":"");
+  $class .= ($fields['gutter'] ? " ".$fields['gutter']:"");
+  if(!empty($attributes['className'])){
+	  $class .= $attributes['className'];
+  }
   ?>
   <div class="emergence-flex-row d-flex <?=$class?>">
     <?=$innerblocs?>

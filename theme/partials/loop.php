@@ -19,10 +19,10 @@
 		'posts',
 		[
 			'enable_numbers' => true,
-			'prev_html'      => '<a href="{URL}" class="paging__prev">' . esc_html__( '« Previous Entries', 'app' ) . '</a>',
-			'next_html'      => '<a href="{URL}" class="paging__next">' . esc_html__( 'Next Entries »', 'app' ) . '</a>',
-			'first_html'     => '<a href="{URL}" class="paging__first"></a>',
-			'last_html'      => '<a href="{URL}" class="paging__last"></a>',
+			'prev_html'      => '<a href="{URL}" class="btn btn-primary">' . esc_html__( '« Previous Entries', 'app' ) . '</a>',
+			'next_html'      => '<a href="{URL}" class="btn btn-primary">' . esc_html__( 'Next Entries »', 'app' ) . '</a>',
+			'first_html'     => '<a href="{URL}" class="btn btn-primary"></a>',
+			'last_html'      => '<a href="{URL}" class="btn btn-primary"></a>',
 			'limiter_html'   => '<li class="paging__spacer">...</li>',
 		]
 	);
