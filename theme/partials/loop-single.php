@@ -31,13 +31,14 @@ global $post;
 	<?php comments_template(); ?>
 
 	<?php
-	$show_pagination = apply_filters('emergence_show_pagination_single_loop', true, $post);
-	if($show_pagination){		
+	$pagination_next_label = apply_filters('emergence_show_pagination_single_loop', 'Next Article', $post);
+	$pagination_back_label = apply_filters('emergence_show_pagination_single_loop', 'Previous Article', $post);
+	if($pagination_next_label && $pagination_back_label){
 		carbon_pagination(
 			'post',
 			[
-				'prev_html' => '<a href="{URL}" class="btn btn-primary"><i class="fas fa-arrow-left"></i> ' . esc_html__( 'Previous Article', 'app' ) . '</a>',
-				'next_html' => '<a href="{URL}" class="btn btn-primary">' . esc_html__( 'Next Article', 'app' ) . ' <i class="fas fa-arrow-right"></i></a>',
+				'prev_html' => '<a href="{URL}" class="btn btn-primary"><i class="fas fa-arrow-left"></i> ' . esc_html__( $pagination_next_label, 'app' ) . '</a>',
+				'next_html' => '<a href="{URL}" class="btn btn-primary">' . esc_html__( $pagination_back_label, 'app' ) . ' <i class="fas fa-arrow-right"></i></a>',
 			]
 		);
 	}
