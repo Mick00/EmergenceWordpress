@@ -22,7 +22,7 @@ Block::make(__('Flex row'))
   $class = ($fields['wrap'] ? " flex-wrap":"");
   $class .= ($fields['gutter'] ? " ".$fields['gutter']:"");
   if(!empty($attributes['className'])){
-	  $class .= $attributes['className'];
+	  $class .= " ".$attributes['className'];
   }
   ?>
   <div class="emergence-flex-row d-flex <?=$class?>">
@@ -36,8 +36,9 @@ Block::make(__('Flex item'))
 ->set_description(__('Créer un bloc dans une rangée flexible'))
 ->set_category(__('Emergence'))
 ->set_render_callback(function ($fields, $attributes, $innerblocs =""){
+  $class = !empty($attributes['className'])?" ".$attributes['className']:"";
   ?>
-  <div class="emergence-item <?=$attributes['className']?>">
+  <div class="emergence-item<?=$class?>">
     <?=$innerblocs?>
   </div>
   <?php

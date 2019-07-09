@@ -21,7 +21,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php app_shim_wp_body_open(); ?>
-		<nav id="nav" class="fixed-top navbar navbar-expand-md navbar-light transparent-nav<?=is_admin_bar_showing()?" admin-bar-showing":"" ?>" role="navigation">
+		<nav id="nav" class="fixed-top navbar navbar-expand-md at-top<?=is_admin_bar_showing()?" admin-bar-showing":"" ?>" role="navigation">
 		  <div class="container">
 				<a class="navbar-brand" href="/">
 					<img src="<?=carbon_get_theme_option('dark_logo')?>" alt="Logo sombre <?=bloginfo('name')?>" class="logo logo-dark">
