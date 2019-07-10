@@ -3,12 +3,16 @@ let head;
 let nav;
 
 $(document).ready(()=>{
+  const nav = $('#nav');
   $('#navbar-items-container').on('show.bs.collapse', ()=>{
-    $('#nav').addClass('bg-light navbar-light');
-    $('#nav').removeClass('at-top');
+    if(nav.hasClass('at-top')){
+      nav.removeClass('at-top').addClass('not-at-top at-top-collapsed');
+    }
   });
   $('#navbar-items-container').on('hidden.bs.collapse', ()=>{
-    $('#nav').removeClass('bg-light navbar-light');
+    if(nav.hasClass('at-top-collapsed')){
+      nav.removeClass('not-at-top at-top-collapsed').addClass('at-top');
+    }
   });
 });
 
@@ -16,11 +20,10 @@ window.addEventListener('load', event => {
   head = document.getElementsByClassName('head-page');
   nav = $('#nav');
   if (head.length > 0 && $(document).height() > $(window).height()) {
-    console.log('creating observer');
     createObserver();
   } else {
-    nav.removeClass('transparent-nav fixed-top');
-    nav.addClass('bg-light');
+    nav.removeClass('at-top');
+    nav.addClass('not-at-top');
   }
 }, false);
 
