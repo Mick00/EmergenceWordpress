@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+
+  &.image-grid {
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: start;
+  }
+
+  &.grid-2 {
+    grid-template-columns: auto auto;
+  }
+  &.grid-3 {
+    grid-template-columns: auto auto auto;
+  }
+
+  &.grid-4 {
+    grid-template-columns: auto auto auto auto;
+  }
+}
