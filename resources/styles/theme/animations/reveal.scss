@@ -1,0 +1,26 @@
+@keyframes reveal-cicle {
+  from {
+    clip-path: circle(50px at 0 0px);
+  }
+  to {
+    clip-path: circle(100%);
+  }
+}
+
+.reveal-circle {
+  animation-name: reveal-circle;
+
+}
+
+@keyframes reveal {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 0 1px);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.reveal {
+  animation-name: reveal;
+}
