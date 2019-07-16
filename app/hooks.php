@@ -67,3 +67,4 @@ add_filter( 'login_headertext', 'app_filter_login_headertext' );
 add_action( 'after_setup_theme', 'app_bootstrap_carbon_fields', 100 );
 add_action( 'carbon_fields_register_fields', 'app_bootstrap_carbon_fields_register_fields' );
 add_filter( 'carbon_fields_map_field_api_key', 'app_filter_carbon_fields_google_maps_api_key' );
+add_filter( 'wp_nav_menu_items', 'add_socials_to_menu',10,2 );

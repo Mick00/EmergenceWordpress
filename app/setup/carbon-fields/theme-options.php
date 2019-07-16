@@ -22,4 +22,13 @@ Container::make( 'theme_options', __( 'Theme Options', 'app' ) )
 		Field::make( 'text', 'crb_google_maps_api_key', __( 'Google Maps API Key', 'app' ) ),
 		Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script', 'app' ) ),
 		Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script', 'app' ) ),
-	) );
+	)
+)->add_fields(add_socials_fields());
+
+function add_socials_fields(){
+	$fields = [];
+	foreach (get_supported_social_medias() as $social => $icon) {
+		$fields[] = Field::make('text', $social, __(`Profil`));
+	}
+	return $fields;
+}

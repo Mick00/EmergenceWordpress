@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="row py-2">
-				<span class="mx-auto">Propulsion carrière <?=date('Y');?></span>
+				<span class="mx-auto">Emergence Wordpress <?=date('Y');?> <?=get_socials_icon_link('icon-big mx-1')?></span>
 			</div>
 		</footer>
 	</body>
