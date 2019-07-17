@@ -1,2 +1,0 @@
-- set default image grid to 2
-- change default initial clipbox of reveal animations
