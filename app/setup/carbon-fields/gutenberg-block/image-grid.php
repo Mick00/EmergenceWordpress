@@ -12,7 +12,7 @@ Block::make(__('Image Grid'))
     'grid-2'      => '2',
     'grid-3'      => '3',
     'grid-4'      => '4',
-  ]),
+  ])->set_default_value( 'grid-2' ),
   Field::make('complex', 'images', __('Images'))
   ->add_fields([
     Field::make('image', 'image', __('image')),
