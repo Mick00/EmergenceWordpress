@@ -7,7 +7,7 @@
 
 ?>
 <?php if ( have_posts() ) : ?>
-	<div class="articles d-flex flex-row flex-wrap">
+	<div class="articles">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 				<?php Theme::partial('post-card')?>

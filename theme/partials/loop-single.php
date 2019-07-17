@@ -8,7 +8,7 @@ global $post;
 ?>
 <?php while ( have_posts() ) : ?>
 	<?php the_post(); ?>
-	<article <?php post_class( 'article article--single' ); ?>>
+	<article <?php post_class( 'article--single' ); ?>>
 
 			<?php
 			$title = apply_filters('emergence_render_post_title', 'partials/page-title', $post);

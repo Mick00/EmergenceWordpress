@@ -1,10 +1,19 @@
-.articles > div{
-    width: 330px;
+.article--single{
+  color: $light;
+  a {
+    color: $light;
+    &:hover {
+      color: $light-gray;
+    }
+  }
 }
 
 .articles {
-  flex-wrap: wrap;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 
 .emergence-articles {
   min-height: 400px;
