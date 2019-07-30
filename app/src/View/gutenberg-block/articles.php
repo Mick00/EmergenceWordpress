@@ -7,8 +7,11 @@ $args = array(
   'post_status' => 'publish'
 );
 $recent_posts = wp_get_recent_posts( $args, OBJECT );
-$post = $recent_posts[0];
-$date = strtotime($post->post_date);
+// if (count($recent_posts) < 1){
+//   echo "<div><p>Aucune actualité n'est disponible pour le moment</p></div>";
+// } else {
+  $post = $recent_posts[0];
+  $date = strtotime($post->post_date);
 ?>
 <div class="emergence-articles d-flex flex-wrap flex-md-nowrap mt-4">
   <div class="article-principal mb-md-4 mb-4 wow slideInLeft" style="background-image: url('<?=wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];?>')">
@@ -52,3 +55,4 @@ $date = strtotime($post->post_date);
   <?php endfor; ?>
   </div>
 </div>
+<?php //}

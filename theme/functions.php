@@ -126,7 +126,7 @@ add_action( 'widgets_init', function(){
 		'id'						=> 'footerleft',
 		'before_title'	=> '<h3>',
 		'after_title'		=> '</h3>',
-		'before_widget'	=> '<div class="widget flex-fill">',
+		'before_widget'	=> '<div class="widget flex-fill mt-5 ml-3">',
 		'after_widget'	=> '</div>',
 	]);
 	register_sidebar([
@@ -135,7 +135,7 @@ add_action( 'widgets_init', function(){
 		'id'						=> 'footer-center',
 		'before_title'	=> '<h3>',
 		'after_title'		=> '</h3>',
-		'before_widget'	=> '<div class="widget flex-fill">',
+		'before_widget'	=> '<div class="widget flex-fill mt-5 ml-3">',
 		'after_widget'	=> '</div>',
 	]);
 	register_sidebar([
@@ -144,7 +144,7 @@ add_action( 'widgets_init', function(){
 		'id'						=> 'footer-right',
 		'before_title'	=> '<h3>',
 		'after_title'		=> '</h3>',
-		'before_widget'	=> '<div class="widget flex-fill">',
+		'before_widget'	=> '<div class="widget flex-fill mt-5">',
 		'after_widget'	=> '</div>',
 	]);
 } );
